@@ -37,3 +37,53 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.16 });
 
 reveals.forEach((element) => observer.observe(element));
+
+
+// Carrossel principal de imagens do PDV Legal
+const carousel = document.querySelector('[data-carousel]');
+if (carousel) {
+  const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
+  const dots = Array.from(carousel.querySelectorAll('[data-carousel-dot]'));
+  const prev = carousel.querySelector('[data-carousel-prev]');
+  const next = carousel.querySelector('[data-carousel-next]');
+  let current = 0;
+  let timer = null;
+
+  function showSlide(index) {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+  }
+
+  function startCarousel() {
+    stopCarousel();
+    timer = setInterval(() => showSlide(current + 1), 4200);
+  }
+
+  function stopCarousel() {
+    if (timer) clearInterval(timer);
+  }
+
+  prev?.addEventListener('click', () => {
+    showSlide(current - 1);
+    startCarousel();
+  });
+
+  next?.addEventListener('click', () => {
+    showSlide(current + 1);
+    startCarousel();
+  });
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      showSlide(i);
+      startCarousel();
+    });
+  });
+
+  carousel.addEventListener('mouseenter', stopCarousel);
+  carousel.addEventListener('mouseleave', startCarousel);
+
+  showSlide(0);
+  startCarousel();
+}
