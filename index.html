@@ -4,16 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PDV Já | Revenda especializada PDV Legal</title>
-  <meta name="description" content="PDV Já: revenda especializada PDV Legal. Sistema de vendas sem complicação para frente de caixa, gestão, delivery, autoatendimento e segmentos comerciais.">
+  <meta name="description" content="PDV Já: revenda especializada no sistema PDV Legal. Frente de caixa, gestão, delivery, autoatendimento e suporte para o seu comércio vender melhor.">
+  <meta name="theme-color" content="#0898d4">
+  <meta property="og:title" content="PDV Já | Revenda especializada PDV Legal">
+  <meta property="og:description" content="Seu sistema de vendas sem complicação. Venda mais, controle melhor e tenha seu caixa sempre na mão.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="site-header" id="topo">
+  <header class="site-header" id="topo" data-header>
     <div class="container header-inner">
-      <a href="#topo" class="brand" aria-label="PDV Já">
-        <span class="brand-mark">PDV</span><span class="brand-light">Já</span>
+      <a class="brand" href="#topo" aria-label="PDV Já - Início">
+        <span class="brand-box"><strong>PDV</strong><strong>Já</strong></span>
         <small>Revenda PDV Legal</small>
       </a>
 
@@ -30,94 +37,68 @@
       </nav>
 
       <div class="quick-links" aria-label="Links rápidos">
-        <a href="#" title="Portal">Portal</a>
-        <a href="#" title="Boleto 2ª via">Boleto 2ª via</a>
-        <a href="#" class="instagram" title="Instagram" aria-label="Instagram">◎</a>
+        <a href="#contato">Portal</a>
+        <a href="#contato">Boleto 2ª via</a>
+        <a class="icon-link" href="#contato" aria-label="Instagram">◎</a>
       </div>
     </div>
   </header>
 
   <main id="conteudo">
-    <section class="hero section-blue">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-shape-yellow"></div>
+      <div class="hero-shape-blue"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Revenda especializada PDV Legal</p>
-          <h1>Seu sistema de vendas sem complicação.</h1>
+          <h1 id="hero-title">Seu sistema de vendas sem complicação.</h1>
           <p class="hero-lead">Venda mais, controle melhor e tenha seu caixa sempre na mão com o PDV Legal.</p>
           <div class="hero-actions">
-            <a class="btn btn-outline-yellow" href="https://wa.me/5513974021870?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20Pdv%20Legal." target="_blank" rel="noopener">🚀 Quero Conhecer o Pdv Legal</a>
-            <a class="btn btn-white" href="#solucoes">Conhecer soluções</a>
+            <a class="btn btn-outline" href="https://wa.me/5513974021870?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20Pdv%20Legal" target="_blank" rel="noopener">🚀 Quero Conhecer o Pdv Legal</a>
+            <a class="btn btn-ghost" href="#solucoes">Ver soluções</a>
           </div>
-          <div class="hero-points" aria-label="Principais vantagens">
-            <span><strong>Frente de caixa</strong> rápida e prática</span>
-            <span><strong>Gestão</strong> controle completo</span>
-            <span><strong>Suporte</strong> atendimento próximo</span>
+          <div class="hero-points" aria-label="Diferenciais">
+            <span>Frente de caixa</span>
+            <span>Gestão completa</span>
+            <span>Suporte próximo</span>
           </div>
         </div>
-
-        <div class="hero-visual" aria-hidden="true">
-          <div class="yellow-blob"></div>
-          <div class="pos-device">
-            <div class="device-top"></div>
-            <div class="device-screen">
-              <div class="screen-header">PDV Legal</div>
-              <div class="screen-tabs"><span>Sorvetes</span><span>Bebidas</span><span>Lanches</span></div>
-              <div class="product-grid">
-                <span>Açaí<br><b>12,00</b></span>
-                <span>Café<br><b>7,00</b></span>
-                <span>Combo<br><b>18,90</b></span>
-                <span>Suco<br><b>8,50</b></span>
-                <span>Lanche<br><b>24,90</b></span>
-                <span>Pizza<br><b>39,90</b></span>
-              </div>
-              <div class="screen-total">TOTAL <b>R$ 111,20</b></div>
-            </div>
-            <div class="device-base"></div>
-          </div>
+        <div class="hero-media">
+          <img src="assets/hero-terminal.webp" alt="Terminal de venda com interface do PDV Legal" width="1448" height="1086" fetchpriority="high">
         </div>
       </div>
     </section>
 
-    <div class="brush brush-blue"></div>
+    <div class="paint-divider paint-blue" aria-hidden="true"></div>
 
-    <section class="intro section-white" id="solucoes">
-      <div class="container two-columns align-center">
-        <div class="media-card video-card">
-          <div class="mini-pos">
-            <div class="mini-screen">
-              <div class="mini-logo">PDV Legal</div>
-              <div class="mini-grid"></div>
-            </div>
-          </div>
-          <button class="play" type="button" aria-label="Vídeo demonstrativo">▶</button>
+    <section class="section intro-section" id="solucoes" aria-labelledby="intro-title">
+      <div class="container split-grid split-intro">
+        <div class="media-card media-video reveal">
+          <img src="assets/frente-caixa.webp" alt="Terminal PDV Legal em destaque para frente de caixa" width="1122" height="1402">
+          <span class="play-button" aria-hidden="true"></span>
         </div>
-        <div class="content-block">
-          <h2>Quer conhecer um pouquinho mais sobre o nosso sistema de frente de caixa?</h2>
+        <div class="section-copy reveal">
+          <p class="eyebrow blue">Conheça o PDV Legal</p>
+          <h2 id="intro-title">Quer conhecer um pouquinho mais sobre o nosso sistema de frente de caixa?</h2>
           <p>O PDV Legal é uma solução prática para vender com agilidade, controlar o caixa, organizar produtos e acompanhar informações importantes do seu negócio.</p>
           <p>Com a PDV Já, você conta com orientação para implantação, treinamento e suporte para sua equipe operar com mais segurança.</p>
+          <a class="link-arrow" href="https://wa.me/5513974021870?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20Pdv%20Legal" target="_blank" rel="noopener">Falar com um consultor</a>
         </div>
       </div>
     </section>
 
-    <div class="brush brush-blue bottom"></div>
+    <div class="paint-divider paint-yellow" aria-hidden="true"></div>
 
-    <section class="management section-white">
-      <div class="container two-columns align-center reverse-mobile">
-        <div class="notebook" aria-hidden="true">
-          <div class="notebook-screen">
-            <div class="erp-top"></div>
-            <div class="erp-sidebar"></div>
-            <div class="erp-content">
-              <span></span><span></span><span></span><span></span>
-            </div>
-          </div>
-          <div class="notebook-base"></div>
+    <section class="section feature-section" aria-labelledby="gestao-title">
+      <div class="container split-grid">
+        <div class="media-clean reveal">
+          <img src="assets/gestao-dashboard.webp" alt="Dashboard de gestão do PDV Legal em notebook" width="1448" height="1086">
         </div>
-        <div class="content-block">
-          <h2>Software de gestão completo para o seu negócio</h2>
+        <div class="section-copy reveal">
+          <h2 id="gestao-title">Software de gestão completo para o seu negócio</h2>
           <h3>Venda mais com uma solução feita para o seu comércio.</h3>
           <p>Controle vendas, estoque, financeiro, operadores, produtos, relatórios e movimentação do caixa em uma única plataforma.</p>
-          <div class="feature-list">
+          <div class="pill-list">
             <span>Frente de caixa</span>
             <span>Estoque</span>
             <span>Financeiro</span>
@@ -129,125 +110,98 @@
       </div>
     </section>
 
-    <div class="brush brush-yellow"></div>
+    <div class="paint-divider paint-blue" aria-hidden="true"></div>
 
-    <section class="sales section-white">
-      <div class="container two-columns align-center">
-        <div class="sales-visual" aria-hidden="true">
-          <div class="receipt-card">
-            <strong>BALCÃO #005</strong>
-            <span>H.PED: 14/07 15:43:04</span>
-            <b>1 - X-TUDO</b>
-            <p>+ Mais queijo<br>+ Mais bacon<br>+ Mal passado</p>
-          </div>
-          <div class="attendant-card">
-            <div class="face"></div>
-            <div class="body"></div>
-            <div class="hand-device">PDV</div>
-          </div>
+    <section class="section feature-section" aria-labelledby="vendas-title">
+      <div class="container split-grid">
+        <div class="media-clean reveal">
+          <img src="assets/vendas-restaurante.webp" alt="Profissional segurando terminal PDV Legal com pedido de balcão" width="1448" height="1086">
         </div>
-        <div class="content-block">
-          <h2>A solução ideal para suas vendas</h2>
+        <div class="section-copy reveal">
+          <h2 id="vendas-title">A solução ideal para suas vendas</h2>
           <h3>Sistema de vendas para bares, restaurantes, lanchonetes, pizzarias, quiosques e muito mais.</h3>
           <p>Tenha recursos para balcão, mesas, comandas, atendimento por garçom, modificadores de pratos, integração com meios de pagamento e controle da operação.</p>
         </div>
       </div>
     </section>
 
-    <div class="brush brush-blue"></div>
-
-    <section class="delivery section-white" id="delivery">
-      <div class="container two-columns align-center reverse-mobile">
-        <div class="content-block">
-          <h2>A solução ideal para o seu Delivery</h2>
-          <div class="inline-action">
-            <a class="btn btn-blue" href="#contato">Saiba mais ›</a>
-          </div>
+    <section class="section feature-section alt" id="delivery" aria-labelledby="delivery-title">
+      <div class="container split-grid reverse">
+        <div class="section-copy reveal">
+          <h2 id="delivery-title">A solução ideal para o seu Delivery</h2>
+          <a class="btn btn-solid" href="https://wa.me/5513974021870?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20Delivery%20do%20Pdv%20Legal" target="_blank" rel="noopener">Saiba mais ›</a>
           <h3>Cardápio digital e pedidos integrados para facilitar sua operação.</h3>
           <p>Receba pedidos, organize entregas e acompanhe suas vendas com mais praticidade. Ideal para restaurantes, pizzarias, lanchonetes, adegas e operações com retirada.</p>
         </div>
-        <div class="phones" aria-hidden="true">
-          <div class="phone phone-left"></div>
-          <div class="phone phone-main">
-            <div class="phone-top"></div>
-            <div class="food-card"></div>
-            <div class="food-lines"></div>
-          </div>
-          <div class="phone phone-right"></div>
+        <div class="media-clean reveal">
+          <img src="assets/delivery-app.webp" alt="Aplicativo de delivery integrado ao PDV Legal em celulares" width="1448" height="1086">
         </div>
       </div>
     </section>
 
-    <div class="brush brush-yellow"></div>
+    <div class="paint-divider paint-yellow" aria-hidden="true"></div>
 
-    <section class="self-service section-white" id="autoatendimento">
-      <div class="container two-columns align-center">
-        <div class="kiosk-area" aria-hidden="true">
-          <div class="kiosk-shape blue"></div>
-          <div class="kiosk-shape yellow"></div>
-          <div class="kiosk">
-            <div class="kiosk-screen">PDV<br>Legal</div>
-            <div class="kiosk-stand"></div>
-          </div>
-          <div class="mini-segments">
-            <span>Food Trucks</span><span>Sorveterias</span><span>Cafeterias</span><span>Quiosques</span><span>Mini Mercados</span>
-          </div>
+    <section class="section feature-section" id="autoatendimento" aria-labelledby="auto-title">
+      <div class="container split-grid">
+        <div class="media-clean reveal">
+          <img src="assets/autoatendimento-kiosk.webp" alt="Totem de autoatendimento com PDV Legal e segmentos atendidos" width="1448" height="1086">
         </div>
-        <div class="content-block">
-          <h2>A solução ideal para o seu Autoatendimento</h2>
+        <div class="section-copy reveal">
+          <h2 id="auto-title">A solução ideal para o seu Autoatendimento</h2>
           <h3>Totens e soluções inteligentes para reduzir filas e agilizar pedidos.</h3>
           <p>Com autoatendimento, seus clientes fazem pedidos de forma autônoma em uma experiência moderna, rápida e integrada ao fluxo do seu negócio.</p>
         </div>
       </div>
     </section>
 
-    <div class="brush brush-blue"></div>
+    <div class="paint-divider paint-blue" aria-hidden="true"></div>
 
-    <section class="segments section-white" id="segmentos">
+    <section class="segments" id="segmentos" aria-labelledby="segments-title">
       <div class="container">
-        <div class="section-title centered">
-          <h2>Conheça todos os nossos segmentos</h2>
-        </div>
-        <div class="segments-grid">
+        <h2 id="segments-title" class="center-title">Conheça todos os nossos segmentos</h2>
+        <div class="segment-grid">
           <article>
             <h3>Eventos</h3>
-            <p>Controle vendas em eventos, shows, estádios e feiras, com operação ágil e relatórios para acompanhar o resultado.</p>
+            <p>Solução ideal para controlar vendas em eventos, shows, estádios e feiras, com operação por operador, vales e gestão financeira.</p>
           </article>
           <article>
             <h3>Bares e Restaurantes</h3>
-            <p>Sistema para bares, restaurantes e pizzarias com comandas, mesas, garçons, modificadores e integração de pagamento.</p>
+            <p>Atenda mesas, comandas, balcão e cozinha com mais organização, agilidade e controle da operação.</p>
           </article>
           <article>
             <h3>Lanchonetes</h3>
-            <p>Venda rápida no balcão, controle de pedidos, produtos, combos e fechamento de caixa de forma simples.</p>
+            <p>Venda rápido, organize pedidos e acompanhe produtos mais vendidos em uma rotina simples para sua equipe.</p>
           </article>
           <article>
             <h3>Varejos</h3>
-            <p>Organize vendas, estoque, produtos mais vendidos, clientes e relatórios para aumentar o controle do comércio.</p>
+            <p>Controle estoque, vendas, produtos, clientes e relatórios para aumentar seus resultados no comércio.</p>
           </article>
           <article>
             <h3>Autoatendimento</h3>
-            <p>Totens e pedidos autônomos para agilizar a fila, melhorar a experiência do cliente e modernizar o atendimento.</p>
+            <p>Integre totens, pedidos autônomos e equipamentos para agilizar filas e melhorar a experiência do cliente.</p>
           </article>
           <article>
             <h3>Hotelaria</h3>
-            <p>Integrações e controles para consumo, quartos, atendimento e gestão de operações em hotéis e pousadas.</p>
+            <p>Integrações para operação hoteleira, consumo por hóspede, controle de quartos e gestão de atendimentos.</p>
           </article>
         </div>
-        <div class="centered segment-cta">
-          <a class="btn btn-outline-yellow blue-text" href="https://wa.me/5513974021870?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20Pdv%20Legal." target="_blank" rel="noopener">🚀 Quero Conhecer o Pdv Legal</a>
+        <div class="center-action">
+          <a class="btn btn-outline-blue" href="https://wa.me/5513974021870?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20Pdv%20Legal" target="_blank" rel="noopener">🚀 Quero Conhecer o Pdv Legal</a>
         </div>
       </div>
     </section>
 
-    <section class="cta section-blue" id="contato">
+    <section class="cta" id="contato" aria-labelledby="cta-title">
       <div class="container cta-card">
         <div>
           <p class="eyebrow">PDV Já</p>
-          <h2>Pronto para conhecer o PDV Legal?</h2>
+          <h2 id="cta-title">Pronto para conhecer o PDV Legal?</h2>
           <p>Fale com a nossa equipe e veja qual solução combina melhor com o seu comércio.</p>
         </div>
-        <a class="btn btn-yellow" href="https://wa.me/5513974021870?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20Pdv%20Legal." target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <div class="cta-actions">
+          <a class="btn btn-yellow" href="https://wa.me/5513974021870?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20Pdv%20Legal" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          <a class="phone-link" href="tel:+5513974021870">+55 13 97402-1870</a>
+        </div>
       </div>
     </section>
   </main>
@@ -255,26 +209,30 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <strong>PDV Já</strong>
-        <p>Seu sistema de vendas sem complicação.</p>
-        <small>Revenda especializada PDV Legal.</small>
+        <a class="brand brand-footer" href="#topo" aria-label="PDV Já - Início">
+          <span class="brand-box"><strong>PDV</strong><strong>Já</strong></span>
+          <small>Revenda PDV Legal</small>
+        </a>
+        <p>PDV Já — seu sistema de vendas sem complicação.</p>
       </div>
       <div>
+        <h3>Site</h3>
         <a href="#solucoes">Soluções</a>
         <a href="#delivery">Delivery</a>
-        <a href="#autoatendimento">Autoatendimento</a>
         <a href="#segmentos">Segmentos</a>
       </div>
       <div>
-        <a href="#">Portal</a>
-        <a href="#">Boleto 2ª via</a>
-        <a href="https://wa.me/5513974021870?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20Pdv%20Legal." target="_blank" rel="noopener">WhatsApp: (13) 97402-1870</a>
-        <a href="#contato">Contato</a>
+        <h3>Contato</h3>
+        <a href="tel:+5513974021870">+55 13 97402-1870</a>
+        <a href="https://wa.me/5513974021870?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20Pdv%20Legal" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
+    <div class="container copyright">© 2026 PDV Já. Revenda especializada PDV Legal.</div>
   </footer>
 
-  <a class="whatsapp-float" href="https://wa.me/5513974021870?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20Pdv%20Legal." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">☎</a>
+  <a class="whatsapp-float" href="https://wa.me/5513974021870?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20Pdv%20Legal" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    ☎
+  </a>
 
   <script src="main.js"></script>
 </body>
