@@ -1,6 +1,6 @@
 # PDV Já - Site institucional
 
-Versão: v09
+Versão: v12
 Data: 22/06/2026
 
 ## Identidade
@@ -50,3 +50,9 @@ Atualização: ícone do Instagram no topo com link para https://www.instagram.c
 Atualização: botão flutuante ajustado para ícone do WhatsApp.
 
 Atualização: texto do rodapé alterado para “Pdv Legal”.
+
+Atualização: texto do rodapé ajustado para “Pdv Legal — seu sistema de vendas sem complicação.”
+
+Atualização: imagem principal do hero ajustada com novo enquadramento e melhor integração visual.
+
+Atualização: o card de vídeo agora é clicável e abre o canal do PDV Legal no YouTube em nova aba. O play deixou de ser apenas visual.
