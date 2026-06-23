@@ -57,7 +57,7 @@ if (carousel) {
 
   function startCarousel() {
     stopCarousel();
-    timer = setInterval(() => showSlide(current + 1), 4200);
+    timer = setInterval(() => showSlide(current + 1), 3600);
   }
 
   function stopCarousel() {
@@ -81,8 +81,6 @@ if (carousel) {
     });
   });
 
-  carousel.addEventListener('mouseenter', stopCarousel);
-  carousel.addEventListener('mouseleave', startCarousel);
 
   showSlide(0);
   startCarousel();

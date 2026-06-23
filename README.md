@@ -1,6 +1,6 @@
 # PDV Já - Site institucional
 
-Versão: v19
+Versão: v20
 Data: 22/06/2026
 
 ## Identidade
@@ -70,3 +70,5 @@ Atualização: assets do hero reorganizados para eliminar sobreposição; forma 
 Atualização: layout refinado para ficar mais simétrico e responsivo, com grids equilibrados, colunas padronizadas e melhor alinhamento entre mídia e texto.
 
 Atualização: imagem principal do hero transformada em carrossel responsivo com imagens do PDV Legal, controles laterais, indicadores e rotação automática.
+
+Atualização: assets ampliados nas seções internas, textos rebalanceados para melhor proporção visual e carrossel principal mantido em rotação automática contínua.
