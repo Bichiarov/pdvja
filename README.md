@@ -1,27 +1,29 @@
 # PDV Já - Site institucional
 
-**Versão:** v01
-**Data:** 22/06/2026
+Versão: v03
+Data: 22/06/2026
 
-Site responsivo para a revenda PDV Já, especializada no sistema PDV Legal.
+## Identidade
+
+- Empresa/revenda: PDV Já
+- Sistema vendido: PDV Legal
+- Slogan: Seu sistema de vendas sem complicação.
+- Frase de apoio: Venda mais, controle melhor e tenha seu caixa sempre na mão.
+- Botão principal: Quero Conhecer o Pdv Legal
+
+## Observações
+
+Esta versão mantém o acabamento profissional e recebeu o WhatsApp oficial da PDV Já nos botões de contato e no rodapé.
+
+## Ajustes necessários antes de publicar
+
+1. Número do WhatsApp aplicado: +55 13 97402-1870.
+2. Inserir links reais de Portal, 2ª via de boleto e Instagram.
+3. Substituir mockups em CSS por imagens oficiais/autorizadas, caso a revenda tenha permissão de uso.
 
 ## Arquivos
 
-- `index.html` - estrutura do site
-- `styles.css` - visual responsivo
-- `main.js` - menu mobile
-
-## Personalizações rápidas
-
-1. Trocar WhatsApp:
-   - Procure por `551399806786` no `index.html` e substitua pelo número correto.
-
-2. Trocar e-mail:
-   - Procure por `contato@pdvja.com.br`.
-
-3. Trocar link da 2ª via:
-   - Procure pelo item `2ª via de boleto` no rodapé/topo e substitua pelo link oficial.
-
-## Observação
-
-A identidade foi criada para a empresa PDV Já. O sistema divulgado é o PDV Legal.
+- `index.html`
+- `styles.css`
+- `main.js`
+- `README.md`

@@ -1,15 +1,19 @@
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener('click', (event) => {
-    const target = document.querySelector(link.getAttribute('href'));
-    if (!target) return;
-    event.preventDefault();
-    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-});
+const menuButton = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('.main-nav');
+const quickLinks = document.querySelector('.quick-links');
 
-const play = document.querySelector('.play');
-if (play) {
-  play.addEventListener('click', () => {
-    alert('Aqui pode entrar o vídeo de apresentação do PDV Legal.');
+if (menuButton && mainNav) {
+  menuButton.addEventListener('click', () => {
+    const isOpen = mainNav.classList.toggle('open');
+    if (quickLinks) quickLinks.classList.toggle('open', isOpen);
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  mainNav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      mainNav.classList.remove('open');
+      if (quickLinks) quickLinks.classList.remove('open');
+      menuButton.setAttribute('aria-expanded', 'false');
+    });
   });
 }
