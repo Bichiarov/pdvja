@@ -1,6 +1,6 @@
 # PDV Já - Site institucional
 
-Versão: v14
+Versão: v17
 Data: 22/06/2026
 
 ## Identidade
@@ -60,3 +60,9 @@ Atualização: o card de vídeo agora é clicável e abre o canal do PDV Legal n
 Atualização: texto ajustado para “Pdv Legal Seu sistema de Vendas sem Complicação”.
 
 Atualização: o vídeo da seção de frente de caixa agora é incorporado diretamente no site usando o YouTube embed do link https://www.youtube.com/watch?v=EpBA8pgvEOc.
+
+Atualização: ajuste do hero para remover sobreposição visual entre imagem principal e formas de fundo; imagem principal redimensionada e melhor posicionada.
+
+Atualização: vídeo redimensionado para destaque maior e configurado para autoplay automático em modo mudo e em loop.
+
+Atualização: assets do hero reorganizados para eliminar sobreposição; forma amarela externa removida, imagem principal redimensionada e composição refinada.
