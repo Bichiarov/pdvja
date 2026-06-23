@@ -1,6 +1,6 @@
 # PDV Já - Site institucional
 
-Versão: v04
+Versão: v09
 Data: 22/06/2026
 
 ## Identidade
@@ -12,7 +12,7 @@ Data: 22/06/2026
 - Botão principal: Quero Conhecer o Pdv Legal
 - WhatsApp: +55 13 97402-1870
 
-## O que mudou na v04
+## O que mudou na v05
 
 - Aplicadas imagens profissionais geradas para o site.
 - Hero visual mais forte e alinhado ao universo PDV Legal.
@@ -34,6 +34,19 @@ Data: 22/06/2026
 
 ## Pendências opcionais
 
-1. Inserir links reais de Portal, 2ª via de boleto e Instagram.
+1. Inserir link real do Instagram.
 2. Publicar em hospedagem ou GitHub Pages/Netlify.
 3. Ajustar textos finais após revisão comercial.
+
+
+## Atualizações v05
+- Link do menu “Portal” atualizado para https://www.pdvlegal.com.br/loginpdvlegal.aspx.
+- Imagens principais atualizadas com versões mais legíveis/maiores.
+
+- v06: Link do menu “Boleto 2ª via” atualizado para https://www.asaas.com/segunda-via.
+
+Atualização: ícone do Instagram no topo com link para https://www.instagram.com/pdvlegal_pontadapraia_santos/
+
+Atualização: botão flutuante ajustado para ícone do WhatsApp.
+
+Atualização: texto do rodapé alterado para “Pdv Legal”.
