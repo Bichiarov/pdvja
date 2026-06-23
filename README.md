@@ -1,6 +1,6 @@
 # PDV Já - Site institucional
 
-Versão: v17
+Versão: v18
 Data: 22/06/2026
 
 ## Identidade
@@ -66,3 +66,5 @@ Atualização: ajuste do hero para remover sobreposição visual entre imagem pr
 Atualização: vídeo redimensionado para destaque maior e configurado para autoplay automático em modo mudo e em loop.
 
 Atualização: assets do hero reorganizados para eliminar sobreposição; forma amarela externa removida, imagem principal redimensionada e composição refinada.
+
+Atualização: layout refinado para ficar mais simétrico e responsivo, com grids equilibrados, colunas padronizadas e melhor alinhamento entre mídia e texto.
