@@ -136,3 +136,495 @@ a{text-decoration:none;color:inherit}img{max-width:100%;display:block}button{fon
 }
 @media (max-width:640px){
 }
+
+
+/* v28 — refinamento premium */
+.site-header{
+  background:rgba(45,56,66,.94);
+}
+.header-inner{
+  padding:12px 0;
+}
+.brand img{
+  height:46px;
+  filter:drop-shadow(0 6px 16px rgba(0,0,0,.18));
+}
+.footer-logo{
+  height:44px;
+}
+.main-nav a{
+  position:relative;
+  padding:8px 0;
+}
+.main-nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:2px;
+  height:2px;
+  border-radius:999px;
+  background:var(--yellow);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .2s ease;
+}
+.main-nav a:hover::after{
+  transform:scaleX(1);
+}
+.quick-links a:not(.icon-link){
+  color:#f4c93d;
+}
+.hero{
+  padding:64px 0 88px;
+}
+.hero h1{
+  max-width:760px;
+}
+.hero-carousel{
+  max-width:590px;
+  border-radius:34px;
+  box-shadow:0 30px 80px rgba(4,25,45,.24);
+}
+.carousel-track{
+  aspect-ratio:16/11.6;
+}
+.carousel-slide figcaption{
+  backdrop-filter:blur(8px);
+}
+.trust-card,
+.mini-card,
+.segment-card,
+.solution-card,
+.media-box,
+.video-card,
+.faq-item{
+  transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+.trust-card:hover,
+.mini-card:hover,
+.segment-card:hover,
+.solution-card:hover,
+.faq-item:hover{
+  transform:translateY(-4px);
+  border-color:rgba(18,151,211,.28);
+  box-shadow:0 18px 44px rgba(9,42,68,.10);
+}
+.solution-card img{
+  height:320px;
+}
+.section-intro{
+  margin-bottom:46px;
+}
+.section{
+  padding:104px 0;
+}
+.banner-cta{
+  margin-top:34px;
+  padding:32px 34px;
+  border:1px solid rgba(255,255,255,.10);
+}
+.benefit-list li::before{
+  box-shadow:0 0 0 5px rgba(244,201,61,.18);
+}
+.conversion-strip{
+  padding:0 0 34px;
+}
+.conversion-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.conversion-item{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:22px;
+  padding:22px;
+  box-shadow:var(--shadow-soft);
+}
+.conversion-item strong{
+  display:block;
+  margin-bottom:8px;
+  color:var(--blue-dark);
+  font-size:17px;
+}
+.conversion-item span{
+  display:block;
+  color:var(--muted);
+  line-height:1.55;
+}
+.cta-card{
+  border:1px solid rgba(255,255,255,.10);
+  position:relative;
+  overflow:hidden;
+}
+.cta-card::after{
+  content:"";
+  position:absolute;
+  width:300px;
+  height:300px;
+  right:-120px;
+  bottom:-170px;
+  border-radius:48px;
+  background:rgba(244,201,61,.12);
+  transform:rotate(24deg);
+}
+.cta-card > *{
+  position:relative;
+  z-index:1;
+}
+.whatsapp-float{
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.whatsapp-float:hover{
+  transform:translateY(-4px) scale(1.03);
+  box-shadow:0 24px 54px rgba(0,0,0,.25);
+}
+@media (max-width:1100px){
+  .brand img{
+    height:44px;
+  }
+  .hero-carousel{
+    max-width:720px;
+  }
+  .conversion-grid{
+    grid-template-columns:1fr;
+  }
+}
+@media (max-width:860px){
+  .brand img{
+    height:42px;
+  }
+  .main-nav a::after{
+    display:none;
+  }
+}
+@media (max-width:640px){
+  .hero{
+    padding:42px 0 72px;
+  }
+  .hero h1{
+    font-size:40px;
+  }
+  .section{
+    padding:76px 0;
+  }
+  .solution-card img{
+    height:260px;
+  }
+  .carousel-track{
+    aspect-ratio:4/3;
+  }
+  .carousel-slide figcaption{
+    font-size:13px;
+    bottom:14px;
+  }
+}
+
+
+/* v31 — correção de nitidez e legibilidade das imagens no site
+   Motivo do problema anterior:
+   os assets estavam em alta resolução, mas alguns blocos do site forçavam
+   height fixo com object-fit: cover. Isso cortava e redimensionava demais
+   as imagens, deixando telas, textos e detalhes ilegíveis no layout.
+*/
+
+/* melhora geral de renderização dos assets */
+.hero-carousel img,
+.solution-card img,
+.media-box img,
+.carousel-slide img{
+  image-rendering:auto;
+  backface-visibility:hidden;
+  transform:translateZ(0);
+}
+
+/* carrossel: mantém imagem inteira, sem corte agressivo */
+.hero-carousel{
+  max-width:720px;
+}
+.carousel-track{
+  aspect-ratio:16 / 10;
+  background:#f7fbff;
+}
+.carousel-slide img{
+  object-fit:contain;
+  padding:10px;
+  background:#f7fbff;
+}
+
+/* legenda mais discreta para não cobrir detalhes da imagem */
+.carousel-slide figcaption{
+  left:20px;
+  right:20px;
+  bottom:18px;
+  max-width:78%;
+  font-size:13px;
+  background:rgba(6,23,38,.56);
+}
+
+/* cards de soluções: imagem completa, maior e legível */
+.solution-card img{
+  height:420px;
+  object-fit:contain;
+  padding:18px;
+  background:linear-gradient(180deg,#f9fcff 0%,#eef6fb 100%);
+}
+
+/* imagens internas sem corte */
+.media-box{
+  padding:14px;
+  background:#fff;
+}
+.media-box img{
+  border-radius:22px;
+  object-fit:contain;
+}
+
+/* grid com mais espaço para imagem */
+.solutions-grid{
+  gap:28px;
+}
+
+/* evita que o hover/transform cause percepção de blur em alguns navegadores */
+.solution-card:hover,
+.trust-card:hover,
+.mini-card:hover,
+.segment-card:hover,
+.faq-item:hover{
+  transform:translateY(-2px);
+}
+
+/* responsivo mantendo legibilidade */
+@media (max-width:1100px){
+  .hero-carousel{
+    max-width:820px;
+  }
+  .solution-card img{
+    height:390px;
+  }
+}
+
+@media (max-width:860px){
+  .carousel-track{
+    aspect-ratio:4 / 3;
+  }
+  .carousel-slide img{
+    padding:8px;
+  }
+  .solution-card img{
+    height:360px;
+  }
+}
+
+@media (max-width:640px){
+  .hero-carousel{
+    max-width:100%;
+  }
+  .carousel-track{
+    aspect-ratio:1 / 1;
+  }
+  .carousel-slide img{
+    padding:6px;
+  }
+  .carousel-slide figcaption{
+    max-width:none;
+    font-size:12px;
+    left:12px;
+    right:12px;
+    bottom:12px;
+  }
+  .solution-card img{
+    height:300px;
+    padding:12px;
+  }
+  .media-box{
+    padding:10px;
+  }
+}
+
+
+/* v33 — refinamento fino de identidade, header e responsividade */
+
+/* header mais limpo e menos pesado */
+.topbar{
+  background:#24313b;
+}
+.site-header{
+  background:rgba(42,53,63,.96);
+  box-shadow:0 8px 28px rgba(4,22,36,.16);
+}
+.header-inner{
+  min-height:76px;
+}
+
+/* logo com proporção melhor no topo */
+.brand{
+  display:flex;
+  align-items:center;
+  flex:0 0 auto;
+}
+.brand img{
+  height:40px;
+  width:auto;
+  max-width:178px;
+  object-fit:contain;
+  object-position:left center;
+}
+
+/* navegação mais elegante */
+.main-nav{
+  gap:20px;
+}
+.main-nav a,
+.quick-links a{
+  font-size:14px;
+  letter-spacing:-.01em;
+}
+.quick-links{
+  gap:14px;
+}
+.icon-link{
+  width:38px;
+  height:38px;
+}
+
+/* hero com acabamento mais premium */
+.hero{
+  background:
+    radial-gradient(circle at 82% 18%, rgba(255,255,255,.16) 0, rgba(255,255,255,0) 32%),
+    linear-gradient(135deg,#0b6f9f 0%, #1197d2 48%, #17a8e4 100%);
+}
+.hero h1{
+  text-wrap:balance;
+}
+.hero-lead{
+  max-width:660px;
+}
+
+/* carrossel mais nobre */
+.hero-carousel{
+  border:1px solid rgba(255,255,255,.26);
+  background:rgba(255,255,255,.10);
+}
+.carousel-slide img{
+  border-radius:24px;
+}
+.carousel-control{
+  width:40px;
+  height:40px;
+  font-size:30px;
+}
+
+/* seções com mais respiro e ritmo */
+.section-intro h2,
+.section-copy h2,
+.cta-card h2{
+  text-wrap:balance;
+}
+.section-intro p,
+.section-copy p{
+  max-width:720px;
+}
+.section-copy p{
+  max-width:560px;
+}
+
+/* cards mais uniformes */
+.solution-card,
+.segment-card,
+.trust-card,
+.mini-card,
+.faq-item{
+  border-color:#d7e3ee;
+}
+.solution-content{
+  min-height:238px;
+  display:flex;
+  flex-direction:column;
+}
+.card-link{
+  margin-top:auto;
+}
+
+/* CTA final mais refinado */
+.cta-card{
+  padding:48px;
+  background:
+    radial-gradient(circle at 88% 20%, rgba(244,201,61,.18) 0, rgba(244,201,61,0) 34%),
+    linear-gradient(135deg,#1f2d38 0%,#263946 46%,#0b3c5d 100%);
+}
+.cta-card h2{
+  color:#fff;
+}
+.cta-card .eyebrow{
+  color:var(--yellow);
+}
+
+/* rodapé com melhor presença de marca */
+.footer{
+  background:#202b34;
+}
+.footer-logo{
+  height:40px;
+  max-width:178px;
+  object-fit:contain;
+  object-position:left center;
+}
+
+/* mobile: menu e logo mais proporcionais */
+@media (max-width:1100px){
+  .header-inner{
+    min-height:70px;
+  }
+  .brand img{
+    height:38px;
+    max-width:168px;
+  }
+  .main-nav{
+    gap:16px;
+  }
+}
+
+@media (max-width:860px){
+  .header-inner{
+    min-height:66px;
+  }
+  .brand img{
+    height:36px;
+    max-width:160px;
+  }
+  .main-nav.open,
+  .quick-links.open{
+    background:#25313b;
+  }
+  .quick-links{
+    grid-template-columns:1fr 1fr auto;
+  }
+}
+
+@media (max-width:640px){
+  .brand img{
+    height:34px;
+    max-width:150px;
+  }
+  .topbar{
+    display:none;
+  }
+  .hero h1{
+    font-size:38px;
+  }
+  .hero-lead{
+    font-size:19px;
+  }
+  .hero-badges span{
+    font-size:13px;
+  }
+  .cta-card{
+    padding:30px 24px;
+  }
+  .footer-logo{
+    height:36px;
+    max-width:160px;
+  }
+}
