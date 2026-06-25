@@ -76,3 +76,22 @@ Versão v33:
 - Hero com acabamento visual mais premium.
 - Cards e CTAs com espaçamentos mais uniformes.
 - Melhorias de responsividade para tablet e smartphone.
+
+Versão v34:
+- Corrigido o uso da logo no site para apontar explicitamente para o asset correto “logo-pdvja.png”.
+- Adicionado versionamento no src da logo para evitar cache do navegador.
+- Ajustado o CSS da marca no header e no rodapé para manter alinhamento e proporção corretos.
+
+Versão v35:
+- Ajustado o alinhamento da frase da topbar de demonstração.
+- Ajustado o CTA “Agendar demonstração” para alinhar com a grade do layout.
+- Refinado o alinhamento da eyebrow “Revenda especializada PDV Legal” no hero.
+- Pequenos ajustes finais para maior simetria visual.
+
+Versão v36:
+- Corrigido o desalinhamento real da logo no site.
+- O PNG da logo tinha margens transparentes laterais; o asset foi recortado para usar a área visual correta.
+- Atualizados width/height reais da logo no HTML.
+- Adicionado cache busting ?v=36 para evitar exibição antiga no navegador.
+- Reforçado o alinhamento da topbar, header e hero pelo mesmo eixo de container.
+- Dimensão final da logo recortada: 2899 x 802px.
